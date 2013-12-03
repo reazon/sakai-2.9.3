@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.sakaiproject.irubric</groupId>
+        <artifactId>irubric</artifactId>
+        <version>1.0.0</version>
+    </parent>
+	
+	<name>iRubric Assembly</name>
+	<groupId>org.sakaiproject.irubric</groupId>
+	<artifactId>irubric-assembly</artifactId>
+	
+	<packaging>pom</packaging>
+
+	<dependencies>		
+		<!-- irubric -->
+		<dependency>
+   			<groupId>org.sakaiproject.irubric</groupId>
+   			<artifactId>irubric-api</artifactId>
+   			<version>${project.version}</version>
+   			<scope>compile</scope>
+   		</dependency>
+   		<dependency>
+   			<groupId>org.sakaiproject.irubric</groupId>
+   			<artifactId>irubric-impl</artifactId>
+   			<version>${project.version}</version>
+   			<scope>compile</scope>
+   		</dependency>
+   		<dependency>
+   			<groupId>org.sakaiproject.irubric</groupId>
+   			<artifactId>irubric-pack</artifactId>
+   			<version>${project.version}</version>
+   			<scope>compile</scope>
+			<type>war</type>
+   		</dependency>
+   		<dependency>
+   			<groupId>org.sakaiproject.irubric</groupId>
+   			<artifactId>irubric-tool</artifactId>
+   			<version>${project.version}</version>
+   			<scope>compile</scope>
+   			<type>war</type>
+   		</dependency>
+	</dependencies>
+</project>
