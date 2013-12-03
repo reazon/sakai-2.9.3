@@ -1,0 +1,17 @@
+<projectDescription>
+  <name>gradebook2-client</name>
+  <comment/>
+  <projects>
+    <project>gradebook2-api</project>
+    <project>gradebook2-model</project>
+    <project>gradebook2-shared</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

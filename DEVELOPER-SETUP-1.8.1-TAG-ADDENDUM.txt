@@ -1,0 +1,19 @@
+
+
+DEVELOPER_SETUP-1.8.1-TAG-ADDENDUM
+----------------------------------
+
+In order to Run or Debug the GWT application, it seems to be necessary to copy the transient dependencies for slf4j in the war/WEB-INF folder
+
+There seems to be classloader isolation preventing them from being loaded via a direct reference in the .classpath file for Eclipse.
+
+This may be new for Eclipse Juno... 
+
+The version of slf4j that this tag uses is 1.5.8 so if, from the GB2 source root directory, you run something like the following, you should be able to launch Run/Debug in Juno
+
+cp \
+ ~/.m2/org/slf4j/slf4j-log4j12/1.5.8/slf4j-log4j12-1.5.8.jar \
+ ~/.m2/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar \
+ war/WEB-INF/lib/
+ 
+ 

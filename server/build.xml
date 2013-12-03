@@ -1,0 +1,11 @@
+<project name="CheckVersion" default="build" basedir=".">
+
+	<target name="MoveVersionFile">
+		<copy file="../VERSION.txt" tofile="src/java/org/sakaiproject/gradebook/gwt/server/VERSION.txt"/>
+	</target>
+
+	<target name="build" description="Build this project">
+		<antcall target="MoveVersionFile"/>
+	</target>
+	
+</project>
