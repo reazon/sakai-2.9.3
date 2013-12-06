@@ -6,7 +6,7 @@
 
 		#set ($irubricLink = "")
 		#if($!purpose)
-			#set ($irubricLink = $gbToolPlacementId + "/iRubricLink.jsp?siteId="+ $gradebookUId + "&gradebookUid=" + $gradebookUId + "&p=" + $purpose)
+			#set ($irubricLink = $gbToolPlacementId + "/iRubricLink.jsp?siteId="+ $gradebookUId + "&gradebookUid=" + $gradebookUId + "&ld=" + $purpose)
 			
 		#end
 		<iframe id="iframeiRubric" width="100%" height="600px" frameBorder="0" src='$irubricLink' #if ($!purpose) style='display:block;' #else style='display:none;' #end ></iframe>
